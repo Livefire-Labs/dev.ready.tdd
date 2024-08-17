@@ -1,0 +1,42 @@
+apiVersion: cluster.x-k8s.io/v1beta1
+kind: Cluster
+metadata:
+  name: CHANGE_IT
+  namespace: CHANGE_IT
+  labels:
+    tkg-cluster-selector: CHANGE_IT
+spec:
+  clusterNetwork:
+    pods:
+      cidrBlocks:
+        - CHANGE_IT
+    services:
+      cidrBlocks:
+        - CHANGE_IT
+    serviceDomain: CHANGE_IT
+  topology:
+    class: CHANGE_IT
+    version: CHANGE_IT
+    variables:
+      - name: storageClasses
+        value:
+          - CHANGE_IT
+      - name: defaultStorageClass
+        value: CHANGE_IT
+      - name: vmClass
+        value: CHANGE_IT
+      - name: storageClass
+        value: CHANGE_IT
+    controlPlane:
+      replicas: CHANGE_IT
+      metadata:
+        annotations:
+          run.tanzu.vmware.com/resolve-os-image: CHANGE_IT
+    workers:
+      machineDeployments:
+        - class: node-pool
+          name: CHANGE_IT
+          replicas: CHANGE_IT
+          metadata:
+            annotations:
+              run.tanzu.vmware.com/resolve-os-image: CHANGE_IT
