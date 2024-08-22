@@ -24,7 +24,7 @@ spec:
         - CHANGE_IT # 10.96.0.0/12
     serviceDomain: CHANGE_IT # cluster.local
   topology:
-    class: CHANGE_IT # cluster.local
+    class: CHANGE_IT # tanzukubernetescluster
     version: CHANGE_IT # v1.29.4---vmware.3-fips.1-tkg.1
     variables:
       - name: storageClasses
