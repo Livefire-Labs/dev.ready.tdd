@@ -40,7 +40,7 @@ spec:
       replicas: CHANGE_IT # 1
       metadata:
         annotations:
-          run.tanzu.vmware.com/resolve-os-image: CHANGE_IT # san-tanzu-storage
+          run.tanzu.vmware.com/resolve-os-image: CHANGE_IT # vsan-tanzu-storage
     workers:
       machineDeployments:
         - class: node-pool
